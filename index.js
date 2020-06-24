@@ -4,7 +4,7 @@ module.exports.sync = writeFileSync
 module.exports._getTmpname = getTmpname // for testing
 module.exports._cleanupOnExit = cleanupOnExit
 
-const fs = require('fs')
+const fs = require('normalized-fs')
 const MurmurHash3 = require('imurmurhash')
 const onExit = require('signal-exit')
 const path = require('path')
